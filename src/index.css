@@ -87,3 +87,34 @@ img { max-width: 100%; display: block; }
 }
 .full-width { width: 100%; }
 .auth-switch { margin-top: 15px; text-align: center; font-size: 14px; }
+
+
+
+
+
+/* ---------- Navbar ---------- */
+.navbar { background: #fff; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 10; }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.logo { font-size: 22px; font-weight: 700; color: var(--primary); }
+.nav-links { display: flex; align-items: center; gap: 18px; }
+.nav-links a { color: var(--text); font-weight: 500; }
+.nav-links a.active { color: var(--primary); }
+.nav-user { color: var(--muted); font-size: 14px; }
+
+/* ---------- Layout ---------- */
+.page { padding-top: 30px; padding-bottom: 40px; }
+.page-title { margin-bottom: 20px; }
+.center-text { text-align: center; }
+.auth-page { min-height: calc(100vh - 64px); }
+
+/* ---------- Home ---------- */
+.hero {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+.hero h1 { font-size: 40px; margin-bottom: 15px; }
+.hero p { max-width: 560px; margin: 0 auto 25px; font-size: 18px; opacity: 0.9; }
+.hero-btn { background: #fff; color: var(--primary); border-color: #fff; font-weight: 600; }
+.hero-btn:hover { background: #eef2ff; }
