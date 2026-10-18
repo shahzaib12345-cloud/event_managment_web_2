@@ -288,3 +288,62 @@ img { max-width: 100%; display: block; }
 .my-event-info h3 { margin: 6px 0; font-size: 18px; }
 .my-event-actions { display: flex; flex-direction: column; gap: 8px; align-items: stretch; text-align: center; }
 .completed-badge { background: #e5e7eb; color: var(--muted); }
+
+
+
+
+/* ---------- App layout / footer ---------- */
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+.main { flex: 1; }
+.footer {
+  background: #1f2937;
+  color: #d1d5db;
+  text-align: center;
+  padding: 22px 0;
+  font-size: 14px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 800px) {
+  .details { grid-template-columns: 1fr; }
+  .details-img { min-height: 220px; }
+  .hero { padding: 60px 0; }
+  .hero h1 { font-size: 30px; }
+}
+
+@media (max-width: 700px) {
+  .menu-toggle { display: block; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 18px 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-links.open { display: flex; }
+
+  .my-event { flex-direction: column; align-items: flex-start; }
+  .my-event-img { width: 100%; height: 160px; }
+  .my-event-actions { flex-direction: row; width: 100%; }
+  .my-event-actions .btn { flex: 1; }
+
+  .filter-buttons { width: 100%; }
+  .filter-buttons .btn { flex: 1; }
+  .pagination { gap: 10px; font-size: 14px; }
+}
